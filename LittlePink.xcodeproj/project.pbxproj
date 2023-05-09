@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4A0535F616EEB122B49D5DAD /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */; };
+		9A4C08B72A0655220019DE8D /* WaterFallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C08B62A0655210019DE8D /* WaterFallVC.swift */; };
+		9ACEF46F2A089A39007F2D5F /* WaterFallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */; };
+		9AD113472A05F2B4006AF033 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD113462A05F2B4006AF033 /* HomeVC.swift */; };
+		9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD113482A05F8E3006AF033 /* DiscoverVC.swift */; };
+		9AD1134B2A05F8FA006AF033 /* FellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1134A2A05F8FA006AF033 /* FellowVC.swift */; };
+		9AD1134D2A05F91A006AF033 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1134C2A05F91A006AF033 /* NearbyVC.swift */; };
+		9AD1134F2A05FACB006AF033 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1134E2A05FACB006AF033 /* Constants.swift */; };
 		9AD61DA729FA73BF00CFF0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD61DA629FA73BF00CFF0DD /* AppDelegate.swift */; };
 		9AD61DA929FA73BF00CFF0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD61DA829FA73BF00CFF0DD /* SceneDelegate.swift */; };
-		9AD61DAB29FA73BF00CFF0DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD61DAA29FA73BF00CFF0DD /* ViewController.swift */; };
 		9AD61DAE29FA73BF00CFF0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD61DAC29FA73BF00CFF0DD /* Main.storyboard */; };
 		9AD61DB129FA73BF00CFF0DD /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AD61DAF29FA73BF00CFF0DD /* LittlePink.xcdatamodeld */; };
 		9AD61DB329FA73C300CFF0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD61DB229FA73C300CFF0DD /* Assets.xcassets */; };
@@ -20,10 +26,16 @@
 /* Begin PBXFileReference section */
 		1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9533CAC1A1E805372C2A6492 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
+		9A4C08B62A0655210019DE8D /* WaterFallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallVC.swift; sourceTree = "<group>"; };
+		9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallCell.swift; sourceTree = "<group>"; };
+		9AD113462A05F2B4006AF033 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9AD113482A05F8E3006AF033 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		9AD1134A2A05F8FA006AF033 /* FellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FellowVC.swift; sourceTree = "<group>"; };
+		9AD1134C2A05F91A006AF033 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
+		9AD1134E2A05FACB006AF033 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9AD61DA329FA73BF00CFF0DD /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD61DA629FA73BF00CFF0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD61DA829FA73BF00CFF0DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AD61DAA29FA73BF00CFF0DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AD61DAD29FA73BF00CFF0DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AD61DB029FA73BF00CFF0DD /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		9AD61DB229FA73C300CFF0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +64,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9AD113502A05FCBF006AF033 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9AD113462A05F2B4006AF033 /* HomeVC.swift */,
+				9AD113482A05F8E3006AF033 /* DiscoverVC.swift */,
+				9AD1134A2A05F8FA006AF033 /* FellowVC.swift */,
+				9AD1134C2A05F91A006AF033 /* NearbyVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9AD61D9A29FA73BF00CFF0DD = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				9AD61DA629FA73BF00CFF0DD /* AppDelegate.swift */,
+				9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */,
+				9A4C08B62A0655210019DE8D /* WaterFallVC.swift */,
 				9AD61DA829FA73BF00CFF0DD /* SceneDelegate.swift */,
-				9AD61DAA29FA73BF00CFF0DD /* ViewController.swift */,
+				9AD1134E2A05FACB006AF033 /* Constants.swift */,
+				9AD113502A05FCBF006AF033 /* Home */,
 				9AD61DAC29FA73BF00CFF0DD /* Main.storyboard */,
 				9AD61DB229FA73C300CFF0DD /* Assets.xcassets */,
 				9AD61DB429FA73C300CFF0DD /* LaunchScreen.storyboard */,
@@ -91,7 +117,6 @@
 				9533CAC1A1E805372C2A6492 /* Pods-LittlePink.debug.xcconfig */,
 				9C91AA2C8BBF16590C6772BA /* Pods-LittlePink.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,10 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD61DAB29FA73BF00CFF0DD /* ViewController.swift in Sources */,
 				9AD61DA729FA73BF00CFF0DD /* AppDelegate.swift in Sources */,
+				9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */,
 				9AD61DA929FA73BF00CFF0DD /* SceneDelegate.swift in Sources */,
+				9AD113472A05F2B4006AF033 /* HomeVC.swift in Sources */,
+				9ACEF46F2A089A39007F2D5F /* WaterFallCell.swift in Sources */,
 				9AD61DB129FA73BF00CFF0DD /* LittlePink.xcdatamodeld in Sources */,
+				9A4C08B72A0655220019DE8D /* WaterFallVC.swift in Sources */,
+				9AD1134F2A05FACB006AF033 /* Constants.swift in Sources */,
+				9AD1134B2A05F8FA006AF033 /* FellowVC.swift in Sources */,
+				9AD1134D2A05F91A006AF033 /* NearbyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
