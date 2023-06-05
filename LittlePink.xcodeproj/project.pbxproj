@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4A0535F616EEB122B49D5DAD /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */; };
 		9A4C08B72A0655220019DE8D /* WaterFallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C08B62A0655210019DE8D /* WaterFallVC.swift */; };
+		9AB2A6A62A0A3D2700983141 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2A6A52A0A3D2700983141 /* README.md */; };
+		9AB2A6AA2A0A4F1E00983141 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */; };
+		9AB2A6AC2A0A50CD00983141 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A6AB2A0A50CD00983141 /* PostVC.swift */; };
+		9AC384E02A0B6E34000691FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AC384DF2A0B6E34000691FD /* Localizable.strings */; };
 		9ACEF46F2A089A39007F2D5F /* WaterFallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */; };
 		9AD113472A05F2B4006AF033 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD113462A05F2B4006AF033 /* HomeVC.swift */; };
 		9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD113482A05F8E3006AF033 /* DiscoverVC.swift */; };
@@ -27,6 +31,13 @@
 		1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9533CAC1A1E805372C2A6492 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4C08B62A0655210019DE8D /* WaterFallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallVC.swift; sourceTree = "<group>"; };
+		9AB2A6A52A0A3D2700983141 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9AB2A6A72A0A41A300983141 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		9AB2A6A82A0A41A300983141 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		9AB2A6AB2A0A50CD00983141 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		9AC384DF2A0B6E34000691FD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9AC8E8B62A0DE0A500A2D672 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallCell.swift; sourceTree = "<group>"; };
 		9AD113462A05F2B4006AF033 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9AD113482A05F8E3006AF033 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
@@ -64,6 +75,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9AB2A6A32A0A3C3F00983141 /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */,
+				9A4C08B62A0655210019DE8D /* WaterFallVC.swift */,
+			);
+			path = WaterFall;
+			sourceTree = "<group>";
+		};
+		9AB2A6A42A0A3C5800983141 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9AD1134E2A05FACB006AF033 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9AC8E8B52A0DDCCD00A2D672 /* Demos + PH */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2A6AB2A0A50CD00983141 /* PostVC.swift */,
+				9AC8E8B62A0DE0A500A2D672 /* 闭包.playground */,
+			);
+			path = "Demos + PH";
+			sourceTree = "<group>";
+		};
 		9AD113502A05FCBF006AF033 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +115,7 @@
 		9AD61D9A29FA73BF00CFF0DD = {
 			isa = PBXGroup;
 			children = (
+				9AB2A6A52A0A3D2700983141 /* README.md */,
 				9AD61DA529FA73BF00CFF0DD /* LittlePink */,
 				9AD61DA429FA73BF00CFF0DD /* Products */,
 				C882D7F7ACD44A9652074717 /* Pods */,
@@ -97,12 +135,14 @@
 			isa = PBXGroup;
 			children = (
 				9AD61DA629FA73BF00CFF0DD /* AppDelegate.swift */,
-				9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */,
-				9A4C08B62A0655210019DE8D /* WaterFallVC.swift */,
 				9AD61DA829FA73BF00CFF0DD /* SceneDelegate.swift */,
-				9AD1134E2A05FACB006AF033 /* Constants.swift */,
-				9AD113502A05FCBF006AF033 /* Home */,
+				9AC384DF2A0B6E34000691FD /* Localizable.strings */,
+				9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */,
 				9AD61DAC29FA73BF00CFF0DD /* Main.storyboard */,
+				9AD113502A05FCBF006AF033 /* Home */,
+				9AB2A6A32A0A3C3F00983141 /* WaterFall */,
+				9AB2A6A42A0A3C5800983141 /* Common */,
+				9AC8E8B52A0DDCCD00A2D672 /* Demos + PH */,
 				9AD61DB229FA73C300CFF0DD /* Assets.xcassets */,
 				9AD61DB429FA73C300CFF0DD /* LaunchScreen.storyboard */,
 				9AD61DB729FA73C300CFF0DD /* Info.plist */,
@@ -164,6 +204,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9AD61D9A29FA73BF00CFF0DD;
 			productRefGroup = 9AD61DA429FA73BF00CFF0DD /* Products */;
@@ -180,8 +221,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC384E02A0B6E34000691FD /* Localizable.strings in Resources */,
 				9AD61DB629FA73C300CFF0DD /* LaunchScreen.storyboard in Resources */,
 				9AD61DB329FA73C300CFF0DD /* Assets.xcassets in Resources */,
+				9AB2A6A62A0A3D2700983141 /* README.md in Resources */,
 				9AD61DAE29FA73BF00CFF0DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,10 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD61DA729FA73BF00CFF0DD /* AppDelegate.swift in Sources */,
+				9AB2A6AA2A0A4F1E00983141 /* TabBarC.swift in Sources */,
 				9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */,
 				9AD61DA929FA73BF00CFF0DD /* SceneDelegate.swift in Sources */,
 				9AD113472A05F2B4006AF033 /* HomeVC.swift in Sources */,
 				9ACEF46F2A089A39007F2D5F /* WaterFallCell.swift in Sources */,
+				9AB2A6AC2A0A50CD00983141 /* PostVC.swift in Sources */,
 				9AD61DB129FA73BF00CFF0DD /* LittlePink.xcdatamodeld in Sources */,
 				9A4C08B72A0655220019DE8D /* WaterFallVC.swift in Sources */,
 				9AD1134F2A05FACB006AF033 /* Constants.swift in Sources */,
@@ -255,6 +300,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9AD61DAD29FA73BF00CFF0DD /* Base */,
+				9AB2A6A72A0A41A300983141 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -263,6 +309,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9AD61DB529FA73C300CFF0DD /* Base */,
+				9AB2A6A82A0A41A300983141 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -274,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -334,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

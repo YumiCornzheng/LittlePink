@@ -18,3 +18,5 @@ let kWaterFallPadding: CGFloat = 4
 let kWaterFallVCID = "WaterFallVCID"
 
 let kChannels = ["推荐","旅行","娱乐","才艺","美妆","白富美","美食","萌宠"]
+
+let kMaxPhotoCount = 9

@@ -2,21 +2,33 @@ PODS:
   - CHTCollectionViewWaterfallLayout (0.9.10):
     - CHTCollectionViewWaterfallLayout/Swift (= 0.9.10)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
+  - PryntTrimmerView (4.0.2)
+  - SteviaLayout (4.7.3)
   - XLPagerTabStrip (9.0.0)
+  - YPImagePicker (5.2.1):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout
   - XLPagerTabStrip (~> 9.0)
+  - YPImagePicker
 
 SPEC REPOS:
   trunk:
     - CHTCollectionViewWaterfallLayout
+    - PryntTrimmerView
+    - SteviaLayout
     - XLPagerTabStrip
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+  YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
 
-PODFILE CHECKSUM: 43baeec7cb8c11b74302a314b2f748d0ac6d6685
+PODFILE CHECKSUM: a2482717be60057f50dd16dcdf2398ce25a63100
 
 COCOAPODS: 1.12.0

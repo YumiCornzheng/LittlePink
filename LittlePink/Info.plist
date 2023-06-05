@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>打开后可存储照片和视频</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>打开后可录制视频声音</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>打开后可选择照片和视频</string>
+	<key>NSCameraUsageDescription</key>
+	<string>打开后可拍摄照片和视频</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
