@@ -25,10 +25,10 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate, UIImagePickerCont
             config.albumName = "小粉书"
             config.screens = [.library, .photo, .video]
             config.startOnScreen = .library
-            config.maxCameraZoomFactor = 5
+            config.maxCameraZoomFactor = kMaxCameraZoomFactor
             config.library.preSelectItemOnMultipleSelection = false
             config.library.maxNumberOfItems = kMaxPhotoCount
-            config.library.spacingBetweenItems = 2
+            config.library.spacingBetweenItems = kSpacingBetweenItems
             config.gallery.hidesRemoveButton = false
             
             let picker = YPImagePicker()
