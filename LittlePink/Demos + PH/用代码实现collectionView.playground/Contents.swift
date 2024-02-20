@@ -17,7 +17,7 @@ class MyViewController : UIViewController, UICollectionViewDataSource {
         cv.translatesAutoresizingMaskIntoConstraints = false
         
         cv.register(CVCell.self, forCellWithReuseIdentifier: "CVCellID")
-        
+        cv.backgroundColor = .systemBackground
         return cv
     }()
     override func loadView() {
@@ -28,7 +28,7 @@ class MyViewController : UIViewController, UICollectionViewDataSource {
     }
     
     func setUI(){
-        cv.topAnchor.constraint(equalTo: view.topAnchor, constant: 16).isActive = true
+        cv.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
         cv.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         cv.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         cv.heightAnchor.constraint(equalToConstant: 90).isActive = true
@@ -39,13 +39,15 @@ class MyViewController : UIViewController, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CVCellID", for: indexPath) as! CVCell
+        cell.imageView.image = photos[indexPath.item]
         return cell
     }
 }
 class CVCell: UICollectionViewCell{
-    private lazy var imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     

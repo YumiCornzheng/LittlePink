@@ -1,11 +1,12 @@
 ![Stevia](https://raw.githubusercontent.com/s4cha/Stevia/master/banner.png)
 
-[![Documentation](https://img.shields.io/badge/Read_the-Docs-67ad5c.svg)](http://freshos.org/SteviaDocs/)
+[![Documentation](https://img.shields.io/badge/Read_the-Docs-67ad5c.svg)](https://freshos.github.io/SteviaDocs/)
 [![Language: Swift 2, 3, 4 and 5](https://img.shields.io/badge/language-swift%205-f48041.svg?style=flat)](https://developer.apple.com/swift)
 ![Platform: iOS 8+](https://img.shields.io/badge/platform-iOS%20|%20tvOS-blue.svg?style=flat)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/badge/Cocoapods-compatible-4BC51D.svg?style=flat)](https://cocoapods.org/pods/SteviaLayout)
-[![Build Status](https://app.bitrise.io/app/4478e29045c5f12e/status.svg?token=pti6g-HVKBUPv9mIR3baIw&branch=master)](https://app.bitrise.io/app/4478e29045c5f12e)
+![Swift](https://github.com/freshOS/Stevia/workflows/Swift/badge.svg)
+[![Build Status](https://app.bitrise.io/app/4478e29045c5f12e/status.svg?token=pti6g-HVKBUPv9mIR3baIw)](https://app.bitrise.io/app/4478e29045c5f12e)
 [![codebeat badge](https://codebeat.co/badges/5b81e292-552c-4cf1-9ccc-89d333ec8b79)](https://codebeat.co/projects/github-com-freshos-stevia-master)
 [![License: MIT](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/s4cha/Stevia/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/freshos/Stevia.svg)](https://github.com/freshos/Stevia/graphs/contributors)
@@ -36,15 +37,15 @@
 
 ### 🖼 Visual Layout Api
 ```swift
-layout(
-    100,
-    |-email-| ~ 80,
-    8,
-    |-password-forgot-| ~ 80,
-    >=20,
-    |login| ~ 80,
+layout {
+    100
+    |-email-| ~ 80
+    10%
+    |-password-forgot-| ~ 80
+    >=20
+    |login| ~ 80
     0
-)
+}
 ```
 ### ⛓ Chainable Api
 ```swift
@@ -69,7 +70,7 @@ All Generate **native** NSLayoutConstraints 🎉
 
 ### 👨‍🔬Try it!
 
-Stevia is part of [freshOS](http://freshos.org) iOS toolset. Try it in an example App ! <a class="github-button" href="https://github.com/freshOS/StarterProject/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download freshOS/StarterProject on GitHub">Download Starter Project</a>
+Stevia is part of [freshOS](https://github.com/freshOS) iOS toolset. Try it in an example App ! <a class="github-button" href="https://github.com/freshOS/StarterProject/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download freshOS/StarterProject on GitHub">Download Starter Project</a>
 
 ### 💡 Reason
 Because **nothing holds more truth than pure code** 🤓  
@@ -99,14 +100,98 @@ Stevia + [InjectionForXcode](http://johnholdsworth.com/injection.html) = #WhoNee
 
 *Just `Cmd+S` and you can dev live in the simulator !*
 
-Learn more about how to set up live reload [here](http://freshos.org/SteviaDocs/liveReload/).
+Learn more about how to set up live reload [here](https://freshos.github.io/SteviaDocs/liveReload/).
 
 
 ### ⚙️ Installation
-Get started [here](http://freshos.org/SteviaDocs/installation/).
+
+`Stevia` is installed via the official [Swift Package Manager](https://swift.org/package-manager/).  
+
+Select `Xcode`>`File`> `Swift Packages`>`Add Package Dependency...`  
+and add `https://github.com/freshOS/Stevia`.
+
+*The Swift Package Manager (SPM) is now the official way to install `stevia`. The other package managers are now deprecated as of `4.8.0` and won't be supported in future versions.  
+For Carthage/Cocoapods support (legacy versions) see documentation [here](https://freshos.github.io/SteviaDocs/installation/).*
 
 ### 📖 Documentation
-You can find the full documentation [here](http://freshos.org/SteviaDocs/).
+The following will teach you the gist of Stevia in one minute.  
+To go further, you can refer to the full documentation [here](https://freshos.github.io/SteviaDocs/).
+
+
+Stevia enables you to write readable Auto Layout code. It does so by tackling the 3 main components of layout: **view hierarchy**, **layout** and **styling**.
+
+#### 01 - View hierarchy
+
+```swift
+email.translatesAutoresizingMaskIntoConstraints = false
+password.translatesAutoresizingMaskIntoConstraints = false
+login.translatesAutoresizingMaskIntoConstraints = false
+addSubview(email)
+addSubview(password)
+addSubview(login)
+```
+becomes
+
+```swift
+subviews {
+    email
+    password
+    login
+}
+```
+
+#### 02 - Layout
+```swift
+email.topAnchor.constraint(equalTo: topAnchor, constant: 100).isActive = true
+email.leftAnchor.constraint(equalTo: leftAnchor, constant: 8).isActive = true
+email.rightAnchor.constraint(equalTo: rightAnchor, constant: -8).isActive = true
+email.heightAnchor.constraint(equalToConstant: 80).isActive = true
+
+password.topAnchor.constraint(equalTo: email.bottomAnchor, constant: 8).isActive = true
+password.leftAnchor.constraint(equalTo: leftAnchor, constant: 8).isActive = true
+password.rightAnchor.constraint(equalTo: rightAnchor, constant: -8).isActive = true
+password.heightAnchor.constraint(equalToConstant: 80).isActive = true
+
+login.topAnchor.constraint(lessThanOrEqualTo: password.bottomAnchor, constant: 20).isActive = true
+login.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+login.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+login.heightAnchor.constraint(equalToConstant: 80).isActive = true
+login.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
+```
+
+becomes
+
+```swift
+layout {
+    100
+    |-email-| ~ 80
+    8
+    |-password-| ~ 80
+    >=20
+    |login| ~ 80
+    0
+}
+```
+
+#### 03 - Styling
+
+```swift
+email.borderStyle = .roundedRect
+email.autocorrectionType = .no
+email.keyboardType = .emailAddress
+email.font = UIFont(name: "HelveticaNeue-Light", size: 26)
+```
+becomes
+```swift
+email.style { f in
+    f.borderStyle = .roundedRect
+    f.autocorrectionType = .no
+    f.keyboardType = .emailAddress
+    f.font = UIFont(name: "HelveticaNeue-Light", size: 26)
+    f.returnKeyType = .next
+}
+```
+
 
 ### 👨‍💻 Contributors
 
@@ -120,10 +205,39 @@ You can find the full documentation [here](http://freshos.org/SteviaDocs/).
 [Sai](https://github.com/sai-prasanna),
 [Mike Gallagher](https://github.com/mgallagher),
 [WaterNotWords](https://github.com/waternotwords),
-[Mick MacCallum](https://github.com/0x7fffffff)
+[Mick MacCallum](https://github.com/0x7fffffff),
+[Onur Genes](https://github.com/onurgenes)
 
 ### 👥 Backers
 Like the project? Offer coffee or support us with a monthly donation and help us continue our activities :)
+
+### 📲 Apps using Stevia
+
+Many top-notch Apps with millions of users use Stevia to write better Auto Layout code:
+
+[<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/4d/c1/70/4dc17011-3ca7-bf9a-5326-70db722686ca/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/230x0w.png" height="80px"/>](https://apps.apple.com/cn/app/mobike-smart-bike-sharing/id1044535426?l=en)
+[<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ac/38/7a/ac387a00-893c-66c4-8595-856ad9907c84/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/id1001688546)
+[<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/60/90/af/6090afc0-f2b1-40e7-d74f-78fd4f7309eb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/nerdwallet/id1174471607)
+[<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/30/0c/1c/300c1c5c-2ded-02bc-a073-14c2287509e4/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/230x0w.png" height="80px"/>](https://apps.apple.com/in/app/yatra-flights-hotels-cabs/id730234679)
+[<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/b5/a1/1d/b5a11d97-1982-6346-fab9-056ab6c55512/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/yummypets-pets/id527910229)
+[<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/8b/a0/64/8ba064be-c665-db32-9e63-5751c56dfb84/AppIcon-0-1x_U007emarketing-0-85-220-0-7.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/invitation-maker-ecard/id1446598881)
+[<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/94/ed/1c/94ed1cc6-dc70-9458-5ee1-f42d89d97e50/AppIcon-0-1x_U007emarketing-0-85-220-0-7.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/logo-maker-create-design/id1455008435)
+[<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/76/bf/ab/76bfabcd-d607-b944-c7ce-433ffbbd09c0/AppIconFREE-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/smart-cleaner-clean-storage/id1194582243)
+[<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple49/v4/dd/54/b5/dd54b556-b289-ce8f-4a21-d7d5fb688a69/pr_source.png/230x0w.png" height="80px"/>](https://apps.apple.com/us/app/tuner-eclipse-free-guitar-tuner/id1086479185)
+
+- [Mobike](https://apps.apple.com/cn/app/mobike-smart-bike-sharing/id1044535426?l=en) - The world’s first and largest bike sharing system.
+- [Brightspace Pulse](https://apps.apple.com/us/app/id1001688546) - Education app
+- [NerdWallet](https://apps.apple.com/us/app/nerdwallet/id1174471607) - Credit Score, Budget, Finance
+- [Yatra](https://apps.apple.com/in/app/yatra-flights-hotels-cabs/id730234679) - Flights, Hotels & Cabs
+- [Yummypets](https://apps.apple.com/us/app/yummypets-pets/id527910229) - The world's cutest social network for pet lovers
+- [Invitation Maker](https://apps.apple.com/us/app/invitation-maker-ecard/id1446598881) - Greetings, Invite & Wishes
+- [Logo Maker](https://apps.apple.com/us/app/logo-maker-create-design/id1455008435) - Create & Design 10,000+ Professional Logos
+- [Smart Cleaner](https://apps.apple.com/us/app/smart-cleaner-clean-storage/id1194582243) - Delete Phone Photos, Contacts
+- [Tuner Eclipse](https://apps.apple.com/us/app/tuner-eclipse-free-guitar-tuner/id1086479185) - Free Guitar Tuner
+- and many more...
+
+You are using Stevia ? Please let me know @[sachadso@gmail.com](sachadso@gmail.com) and I'll add you to the list 😍!
+
 
 <a href="https://opencollective.com/freshos/backer/0/website" target="_blank"><img src="https://opencollective.com/freshos/backer/0/avatar.svg"></a>
 <a href="https://opencollective.com/freshos/backer/1/website" target="_blank"><img src="https://opencollective.com/freshos/backer/1/avatar.svg"></a>

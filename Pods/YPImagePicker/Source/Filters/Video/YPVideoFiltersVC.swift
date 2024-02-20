@@ -54,13 +54,13 @@ public final class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
         v.isHidden = true
         return v
     }()
-    private let trimBottomItem: YPMenuItem = {
+    private lazy var trimBottomItem: YPMenuItem = {
         let v = YPMenuItem()
         v.textLabel.text = YPConfig.wordings.trim
         v.button.addTarget(self, action: #selector(selectTrim), for: .touchUpInside)
         return v
     }()
-    private let coverBottomItem: YPMenuItem = {
+    private lazy var coverBottomItem: YPMenuItem = {
         let v = YPMenuItem()
         v.textLabel.text = YPConfig.wordings.cover
         v.button.addTarget(self, action: #selector(selectCover), for: .touchUpInside)
@@ -93,7 +93,7 @@ public final class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
             .addObserver(self,
                          selector: #selector(itemDidFinishPlaying(_:)),
                          name: .AVPlayerItemDidPlayToEndTime,
-                         object: nil)
+                         object: videoView.player.currentItem)
         
         // Set initial video cover
         imageGenerator = AVAssetImageGenerator(asset: self.inputAsset)
@@ -110,7 +110,9 @@ public final class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
         
         selectTrim()
         videoView.loadVideo(inputVideo)
-
+        videoView.showPlayImage(show: true)
+        startPlaybackTimeChecker()
+        
         super.viewDidAppear(animated)
     }
     
@@ -145,12 +147,12 @@ public final class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
     }
 
     private func setupLayout() {
-        view.sv(
+        view.subviews(
             trimBottomItem,
             coverBottomItem,
             videoView,
             coverImageView,
-            trimmerContainerView.sv(
+            trimmerContainerView.subviews(
                 trimmerView,
                 coverThumbSelectorView
             )
@@ -172,7 +174,7 @@ public final class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
         trimmerContainerView.Top == videoView.Bottom
         trimmerContainerView.Bottom == trimBottomItem.Top
 
-        trimmerView.fillHorizontally(m: 30).centerVertically()
+        trimmerView.fillHorizontally(padding: 30).centerVertically()
         trimmerView.Height == trimmerContainerView.Height / 3
 
         coverThumbSelectorView.followEdges(trimmerView)

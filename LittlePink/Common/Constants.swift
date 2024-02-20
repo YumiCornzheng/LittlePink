@@ -13,7 +13,7 @@ let kFellowVCID = "FellowVCID"
 let kDiscoverVCID = "DiscoverVCID"
 let kNoteEditVCID = "NoteEditVCID"
 let kPhotoCellID = "PhotoCellID"
-
+let kPhotoFooterID = "PhotoFooterID"
 let kWaterFallCellID = "WaterFallCellID"
 
 let kWaterFallPadding: CGFloat = 4

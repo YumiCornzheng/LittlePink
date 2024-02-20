@@ -14,6 +14,7 @@
 		9AB2A6AA2A0A4F1E00983141 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */; };
 		9AB2A6AC2A0A50CD00983141 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A6AB2A0A50CD00983141 /* PostVC.swift */; };
 		9AC384E02A0B6E34000691FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AC384DF2A0B6E34000691FD /* Localizable.strings */; };
+		9AC82F7A2A31CAB700994874 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC82F792A31CAB700994874 /* PhotoFooter.swift */; };
 		9ACEF46F2A089A39007F2D5F /* WaterFallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */; };
 		9AD113472A05F2B4006AF033 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD113462A05F2B4006AF033 /* HomeVC.swift */; };
 		9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD113482A05F8E3006AF033 /* DiscoverVC.swift */; };
@@ -41,6 +42,7 @@
 		9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
 		9AB2A6AB2A0A50CD00983141 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		9AC384DF2A0B6E34000691FD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9AC82F792A31CAB700994874 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		9AC8E8B62A0DE0A500A2D672 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9ACEF46E2A089A39007F2D5F /* WaterFallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallCell.swift; sourceTree = "<group>"; };
 		9AD113462A05F2B4006AF033 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -80,6 +82,16 @@
 				1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A74C8802B84580D003A8DA8 /* NoteEdit */ = {
+			isa = PBXGroup;
+			children = (
+				9A44DEA02A2EE1CE00285F58 /* NoteEditVC.swift */,
+				9AFE993C2A2F1356009D1863 /* PhotoCell.swift */,
+				9AC82F792A31CAB700994874 /* PhotoFooter.swift */,
+			);
+			path = NoteEdit;
 			sourceTree = "<group>";
 		};
 		9AB2A6A32A0A3C3F00983141 /* WaterFall */ = {
@@ -147,8 +159,7 @@
 				9AD61DA829FA73BF00CFF0DD /* SceneDelegate.swift */,
 				9AC384DF2A0B6E34000691FD /* Localizable.strings */,
 				9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */,
-				9A44DEA02A2EE1CE00285F58 /* NoteEditVC.swift */,
-				9AFE993C2A2F1356009D1863 /* PhotoCell.swift */,
+				9A74C8802B84580D003A8DA8 /* NoteEdit */,
 				9AD61DAC29FA73BF00CFF0DD /* Main.storyboard */,
 				9AD113502A05FCBF006AF033 /* Home */,
 				9AB2A6A32A0A3C3F00983141 /* WaterFall */,
@@ -294,6 +305,7 @@
 				9AD61DA729FA73BF00CFF0DD /* AppDelegate.swift in Sources */,
 				9AB2A6AA2A0A4F1E00983141 /* TabBarC.swift in Sources */,
 				9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */,
+				9AC82F7A2A31CAB700994874 /* PhotoFooter.swift in Sources */,
 				9AD61DA929FA73BF00CFF0DD /* SceneDelegate.swift in Sources */,
 				9AD113472A05F2B4006AF033 /* HomeVC.swift in Sources */,
 				9ACEF46F2A089A39007F2D5F /* WaterFallCell.swift in Sources */,
