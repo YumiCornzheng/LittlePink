@@ -17,7 +17,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
 //        settings.style.selectedBarBackgroundColor = UIColor.blue
 //        settings.style.selectedBarHeight = 2
         settings.style.selectedBarVerticalAlignment = .bottom
-        buttonBarView.selectedBar.backgroundColor = UIColor(named: "main")
+        buttonBarView.selectedBar.backgroundColor = mainClolr
         buttonBarView.selectedBar.frame.size.height = 2
         
         //butten 的颜色

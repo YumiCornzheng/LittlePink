@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4A0535F616EEB122B49D5DAD /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */; };
+		9A2B0A552B872E5600848C97 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2B0A542B872E5600848C97 /* TextViewIAView.xib */; };
+		9A2B0A572B872ED800848C97 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B0A562B872ED800848C97 /* TextViewIAView.swift */; };
 		9A44DEA12A2EE1CE00285F58 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A44DEA02A2EE1CE00285F58 /* NoteEditVC.swift */; };
 		9A4C08B72A0655220019DE8D /* WaterFallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C08B62A0655210019DE8D /* WaterFallVC.swift */; };
+		9A74C8822B848B2A003A8DA8 /* Basic-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74C8812B848B2A003A8DA8 /* Basic-Extensions.swift */; };
+		9A74C8852B859D2C003A8DA8 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A74C8842B859C82003A8DA8 /* testVideo.mp4 */; };
+		9A74C8872B85A20F003A8DA8 /* NoteEdit-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74C8862B85A20F003A8DA8 /* NoteEdit-DragDrop.swift */; };
+		9A74C8892B85ECDE003A8DA8 /* NoteEdit-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74C8882B85ECDE003A8DA8 /* NoteEdit-CollectionView.swift */; };
+		9A74C88B2B86F615003A8DA8 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74C88A2B86F615003A8DA8 /* NoteEditVC-Config.swift */; };
 		9AB2A6A62A0A3D2700983141 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2A6A52A0A3D2700983141 /* README.md */; };
 		9AB2A6AA2A0A4F1E00983141 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A6A92A0A4F1E00983141 /* TabBarC.swift */; };
 		9AB2A6AC2A0A50CD00983141 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2A6AB2A0A50CD00983141 /* PostVC.swift */; };
@@ -27,6 +34,8 @@
 		9AD61DB129FA73BF00CFF0DD /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AD61DAF29FA73BF00CFF0DD /* LittlePink.xcdatamodeld */; };
 		9AD61DB329FA73C300CFF0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD61DB229FA73C300CFF0DD /* Assets.xcassets */; };
 		9AD61DB629FA73C300CFF0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD61DB429FA73C300CFF0DD /* LaunchScreen.storyboard */; };
+		9AF1A6B22B8878B90053DB4E /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A6B12B8878B90053DB4E /* ChannelVC.swift */; };
+		9AF1A6B42B887B3D0053DB4E /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A6B32B887B3D0053DB4E /* ChannelTableVC.swift */; };
 		9AFE993D2A2F1356009D1863 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE993C2A2F1356009D1863 /* PhotoCell.swift */; };
 		9AFE993F2A2F2471009D1863 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE993E2A2F2471009D1863 /* Extension.swift */; };
 /* End PBXBuildFile section */
@@ -34,8 +43,16 @@
 /* Begin PBXFileReference section */
 		1B9F9F3473F944D6C5F10807 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9533CAC1A1E805372C2A6492 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
+		9A2B0A542B872E5600848C97 /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
+		9A2B0A562B872ED800848C97 /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
 		9A44DEA02A2EE1CE00285F58 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
 		9A4C08B62A0655210019DE8D /* WaterFallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallVC.swift; sourceTree = "<group>"; };
+		9A74C8812B848B2A003A8DA8 /* Basic-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic-Extensions.swift"; sourceTree = "<group>"; };
+		9A74C8832B84A2AE003A8DA8 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A74C8842B859C82003A8DA8 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+		9A74C8862B85A20F003A8DA8 /* NoteEdit-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEdit-DragDrop.swift"; sourceTree = "<group>"; };
+		9A74C8882B85ECDE003A8DA8 /* NoteEdit-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEdit-CollectionView.swift"; sourceTree = "<group>"; };
+		9A74C88A2B86F615003A8DA8 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
 		9AB2A6A52A0A3D2700983141 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AB2A6A72A0A41A300983141 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		9AB2A6A82A0A41A300983141 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -58,6 +75,8 @@
 		9AD61DB229FA73C300CFF0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD61DB529FA73C300CFF0DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AD61DB729FA73C300CFF0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF1A6B12B8878B90053DB4E /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		9AF1A6B32B887B3D0053DB4E /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
 		9AFE993C2A2F1356009D1863 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9AFE993E2A2F2471009D1863 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		9AFE99402A2F2633009D1863 /* 用代码实现collectionView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionView.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -90,6 +109,13 @@
 				9A44DEA02A2EE1CE00285F58 /* NoteEditVC.swift */,
 				9AFE993C2A2F1356009D1863 /* PhotoCell.swift */,
 				9AC82F792A31CAB700994874 /* PhotoFooter.swift */,
+				9A74C8862B85A20F003A8DA8 /* NoteEdit-DragDrop.swift */,
+				9A74C8882B85ECDE003A8DA8 /* NoteEdit-CollectionView.swift */,
+				9A74C88A2B86F615003A8DA8 /* NoteEditVC-Config.swift */,
+				9A2B0A562B872ED800848C97 /* TextViewIAView.swift */,
+				9A2B0A542B872E5600848C97 /* TextViewIAView.xib */,
+				9AF1A6B12B8878B90053DB4E /* ChannelVC.swift */,
+				9AF1A6B32B887B3D0053DB4E /* ChannelTableVC.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -108,6 +134,7 @@
 			children = (
 				9AD1134E2A05FACB006AF033 /* Constants.swift */,
 				9AFE993E2A2F2471009D1863 /* Extension.swift */,
+				9A74C8812B848B2A003A8DA8 /* Basic-Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -169,6 +196,8 @@
 				9AD61DB429FA73C300CFF0DD /* LaunchScreen.storyboard */,
 				9AD61DB729FA73C300CFF0DD /* Info.plist */,
 				9AD61DAF29FA73BF00CFF0DD /* LittlePink.xcdatamodeld */,
+				9A74C8842B859C82003A8DA8 /* testVideo.mp4 */,
+				9A74C8832B84A2AE003A8DA8 /* LittlePink-Bridging-Header.h */,
 			);
 			path = LittlePink;
 			sourceTree = "<group>";
@@ -248,6 +277,8 @@
 				9AD61DB329FA73C300CFF0DD /* Assets.xcassets in Resources */,
 				9AB2A6A62A0A3D2700983141 /* README.md in Resources */,
 				9AD61DAE29FA73BF00CFF0DD /* Main.storyboard in Resources */,
+				9A74C8852B859D2C003A8DA8 /* testVideo.mp4 in Resources */,
+				9A2B0A552B872E5600848C97 /* TextViewIAView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A74C8892B85ECDE003A8DA8 /* NoteEdit-CollectionView.swift in Sources */,
 				9AFE993F2A2F2471009D1863 /* Extension.swift in Sources */,
 				9AFE993D2A2F1356009D1863 /* PhotoCell.swift in Sources */,
 				9AD61DA729FA73BF00CFF0DD /* AppDelegate.swift in Sources */,
 				9AB2A6AA2A0A4F1E00983141 /* TabBarC.swift in Sources */,
+				9AF1A6B42B887B3D0053DB4E /* ChannelTableVC.swift in Sources */,
 				9AD113492A05F8E3006AF033 /* DiscoverVC.swift in Sources */,
 				9AC82F7A2A31CAB700994874 /* PhotoFooter.swift in Sources */,
 				9AD61DA929FA73BF00CFF0DD /* SceneDelegate.swift in Sources */,
@@ -312,9 +345,14 @@
 				9A44DEA12A2EE1CE00285F58 /* NoteEditVC.swift in Sources */,
 				9AB2A6AC2A0A50CD00983141 /* PostVC.swift in Sources */,
 				9AD61DB129FA73BF00CFF0DD /* LittlePink.xcdatamodeld in Sources */,
+				9A74C8872B85A20F003A8DA8 /* NoteEdit-DragDrop.swift in Sources */,
+				9AF1A6B22B8878B90053DB4E /* ChannelVC.swift in Sources */,
+				9A74C88B2B86F615003A8DA8 /* NoteEditVC-Config.swift in Sources */,
 				9A4C08B72A0655220019DE8D /* WaterFallVC.swift in Sources */,
+				9A74C8822B848B2A003A8DA8 /* Basic-Extensions.swift in Sources */,
 				9AD1134F2A05FACB006AF033 /* Constants.swift in Sources */,
 				9AD1134B2A05F8FA006AF033 /* FellowVC.swift in Sources */,
+				9A2B0A572B872ED800848C97 /* TextViewIAView.swift in Sources */,
 				9AD1134D2A05F91A006AF033 /* NearbyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +527,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -524,6 +563,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
